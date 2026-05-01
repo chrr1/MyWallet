@@ -1,17 +1,17 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+  import { Link } from "expo-router";
+  import { Text, View, StyleSheet} from "react-native";
+  import { Image } from "expo-image";
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text style={{color:"blue"}}>Edit app/index.tsx to edit this screen.</Text>
-      <Link href={"/about"}>About</Link>
-    </View>
-  );
-}
+  export default function Index() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.heading}>Edit app/index.tsx to edit this screen.</Text>        
+      </View>
+    );
+  }
+
+  const styles = StyleSheet.create ({
+    container:{
+      backgroundColor: "purple",
+    },
+  })
