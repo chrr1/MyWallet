@@ -22,7 +22,7 @@ export default function SignIn() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Sign In</Text>
+      <Text style={styles.title}>Sign I</Text>
 
       <Text>Email</Text>
       <TextInput
